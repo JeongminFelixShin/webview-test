@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Contact html</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .main-wrap {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        word-wrap: break-word;
+    }
+    section {
+        display: block;
+        position: relative;
+    }
+
+    #main-image {
+        position: relative;
+        width: 100vw;
+        height: 65.555556vw;
+    }
+    .contents-area {
+        position: absolute;
+        top: 52.777778vw;
+        left: 50%;
+        width: 68.888889vw;
+        transform: translateX(-50%);
+    }
+    h2 {
+        font-size: 5.555556vw;
+        margin: 0;
+    }
+    h3 {
+        margin: 6.6666667vw 0 4.444444vw;
+        font-size: 4.444444vw;
+    }
+    p {
+        margin-top: 2.777778vw;
+        font-size: 3.888889vw;
+    }
+    .contents-area a {
+        font-size: 3.888889vw;
+        color: #5737d6;
+        text-decoration: none;
+    }
+    .mail-wrap {
+        position: relative;
+    }
+    .label-area {
+        display: inline-block;
+        margin-right: 5.555556vw;
+    }
+    .mail-address {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .call-query {
+        display: inline-block;
+        width: 45vw;
+    }
+    .call-query p {
+        margin: 0 0 1.111111vw;
+    }
+    .skt-wrap {
+        display: flex;
+        margin-bottom: 5.555556vw;
+    }
+    svg {
+        width: 13.888889vw;
+        height: 11.111111vw;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="main-wrap">
+            <img src="..\assets\img\img_set_avt_aos_2x.png" alt="" id="main-image">
+            <div class="contents-area">
+                <section>
+                    <h2 id="circ-title"></h2>
+                    <p id="circ-desc"></p>
+                </section>
+                <section class="mail-area">
+                    <h3></h3>
+                    <div class="mail-wrap">
+                        <div class="label-area">
+                            <svg width="50" height="40" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m39.39 30.793-13-10 1.22-1.586 13 10-1.22 1.586zm-15.78-10-13 10-1.22-1.586 13-10 1.22 1.586z" fill="#888"/>
+                                <rect x="10" y="10" width="30" height="20" rx=".876" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="m40 11.889-13.898 9.177a2 2 0 0 1-2.204 0L10 11.89" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <a class="mail-address"></a>
+                    </div>
+                </section>
+                <section class="call-area">
+                    <h3></h3>
+                    <div class="skt-wrap">
+                        <div class="label-area">
+                            <svg width="50" height="40" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M38.2 6H11.8v6.626h26.4V6zM21.205 14.702v19.281h7.589V18.497l-7.589-3.795z" fill="#888"/>
+                            </svg>
+                        </div>
+                        <div class="call-query">
+                            <p></p>
+                            <a></a>
+                        </div>
+                    </div>
+                    <div class="skt-wrap">
+                        <div class="label-area">
+                            <svg width="50" height="40" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd" d="M17.117 28.574c-4.256-4.324-5.765-9.226-6.25-12.834l-.048-.382a24.425 24.425 0 0 1-.02-.186l-.038-.366-.03-.355-.025-.343-.019-.33-.013-.318-.009-.305-.003-.147-.002-.421.003-.262.01-.364.014-.329.017-.29.026-.326.031-.301.03-.226s.214-.946.572-1.309l1.623-1.649c.768-.78 2.091-.701 2.955.177l5.477 5.563c.864.878.942 2.223.174 3.003l-1.13 1.147c.122 1.795.964 3.487 2.527 5.075 1.358 1.38 2.82 2.023 3.927 2.32l.232.06.112.025.213.045.201.036.186.029.171.022 1.091-1.109c.768-.78 2.092-.701 2.956.177l5.477 5.563c.864.878.942 2.223.173 3.003l-1.623 1.649c-.357.363-1.289.58-1.289.58-6.521 1.147-12.421-.96-17.7-6.322z" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M32.746 11.546c1.834 1.863 2.673 4.397 2.332 6.888-.077.563-.59.957-1.144.878a1.028 1.028 0 0 1-.865-1.162c.253-1.85-.372-3.74-1.757-5.147a5.658 5.658 0 0 0-4.938-1.612 1.017 1.017 0 0 1-1.159-.858 1.028 1.028 0 0 1 .846-1.178 7.666 7.666 0 0 1 6.685 2.19z" fill="#888"/>
+                                <path d="M35.836 8.127c2.678 2.72 3.9 6.415 3.403 10.043-.077.563-.59.957-1.144.878a1.028 1.028 0 0 1-.865-1.162c.409-2.988-.6-6.038-2.828-8.302a9.15 9.15 0 0 0-7.985-2.607 1.016 1.016 0 0 1-1.159-.859 1.028 1.028 0 0 1 .846-1.177 11.16 11.16 0 0 1 9.732 3.186z" fill="#888"/>
+                            </svg>
+                        </div>
+                        <div class="call-query not-skt">
+                            <p></p>
+                            <a></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const inputDataKR = ['환경 설정','궁금하신 사항이나 개선 의견을 전달 주시면, <br>\n' + '검토하여 ifland에 반영하도록 하겠습니다.','메일로 문의하기','ifland@sk.com','mailto:ifland@sk.com',
+        '전화로 문의하기','SK 텔레콤 고객님','114','tel:114','다른 통신사 고객님','080-011-6000','tel:080-011-6000'];
+    const inputDataEn = ['Setting','TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTT','TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT','ifland@sk.com','mailto:ifland@sk.com',
+        'TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT','TEXTTEXTTEXTTEXTTEXTTEXT\n' +'TEXTTEXTTEXTTEXTTEXTTEXT','1141141141141141141141141141141141141141', 'tel:114','080-011-6000080-011-6000080-011-6000080-01','tel:080-011-6000']
+    function setData(inputData) {
+        //document.querySelector('.main-wrap').style.height = '500px';
+        document.querySelector('#circ-title').innerHTML = inputData[0];//'환경 설정';
+        document.querySelector('#circ-desc').innerHTML = inputData[1];
+        document.querySelector('.mail-area h3').innerHTML = inputData[2];
+
+        var mailInfoEl = document.querySelector('.mail-address');
+        mailInfoEl.innerHTML = inputData[3];
+        mailInfoEl.setAttribute('href', inputData[4]);
+
+        document.querySelector('.call-area h3').innerHTML = inputData[5];
+        document.querySelector('.call-query p').innerHTML = inputData[6];
+        var callInfoEl = document.querySelector('.call-query a');
+        callInfoEl.innerHTML = inputData[7];
+        callInfoEl.setAttribute('href', inputData[8]);
+
+        document.querySelector('.not-skt p').innerHTML = inputData[9];
+        var callInfoEl2 = document.querySelector('.not-skt a');
+        callInfoEl2.innerHTML = inputData[10];
+        callInfoEl2.setAttribute('href', inputData[11]);
+    }
+    document.addEventListener("DOMContentLoaded", function(){
+        console.log('loaded', navigator.language);
+        var lang = navigator.language;
+        (lang === 'ko-KR' || lang === 'ko') ? setData(inputDataKR) : setData(inputDataEn);
+    });
+</script>
+</html>
