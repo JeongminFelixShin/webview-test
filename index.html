@@ -92,6 +92,7 @@
     <div class="container">
         <div class="main-wrap">
             <img src="img_set_avt_aos_2x.png" alt="" id="main-image">
+            <h6></h6>
             <div class="contents-area">
                 <section>
                     <h2 id="circ-title"></h2>
@@ -171,6 +172,7 @@
         console.log('loaded', navigator.language);
         var lang = navigator.language;
         (lang === 'ko-KR' || lang === 'ko') ? setData(inputDataKR) : setData(inputDataEn);
+        document.querySelector('h6').innerHTML = lang;
     });
 </script>
 </html>
