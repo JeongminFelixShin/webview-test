@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='preload' type='text/css'>
     <title>Contact html</title>
 </head>
 <style>
@@ -85,6 +85,7 @@
     }
     .call-query p {
         margin: 0 0 1.111111vw;
+        color: #666;
     }
     .skt-wrap {
         display: flex;
@@ -153,10 +154,13 @@
     </div>
 </body>
 <script>
-    const inputDataKR = ['고객센터','궁금하신 사항이나 개선 의견을 전달 주시면, <br>\n' + '검토하여 ifland에 반영하도록 하겠습니다.','메일로 문의하기','ifland@sk.com','mailto:ifland@sk.com',
+    var inputDataKR = ['고객센터','궁금하신 사항이나 개선 의견을 전달 주시면, <br>\n' + '검토하여 ifland에 반영하도록 하겠습니다.','메일로 문의하기','ifland@sk.com','mailto:ifland@sk.com',
         '전화로 문의하기','SK 텔레콤 고객님','114','tel:114','다른 통신사 고객님','080-011-6000','tel:080-011-6000'];
-    const inputDataEn = ['Customer Centre','TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTT','TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT','ifland@sk.com','mailto:ifland@sk.com',
-        'TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT','TEXTTEXTTEXTTEXTTEXTTEXT\n' +'TEXTTEXTTEXTTEXTTEXTTEXT','1141141141141141141141141141141141141141', 'tel:114','080-011-6000080-011-6000080-011-6000080-01','tel:080-011-6000']
+    var inputDataEn = ['Customer support','If you send inquiries or improvement suggestions, we will review it and apply it on ifland.','Inquiry via e-mail','ifland@sk.com','mailto:ifland@sk.com',
+        'Inquiry via call','SK Telecom customers','114', 'tel:114','Other mobile carrier customers','080-011-6000','tel:080-011-6000'];
+    /*var inputDataTest = ['Customer support','TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTT','TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT','ifland@sk.com','mailto:ifland@sk.com',
+        'TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT','TEXTTEXTTEXTTEXTTEXTTEXT\n' +'TEXTTEXTTEXTTEXTTEXTTEXT','1141141141141141141141141141141141141141', 'tel:114','080-011-6000080-011-6000080-011-6000080-01','tel:080-011-6000']*/
+
     function setData(inputData) {
         //document.querySelector('.main-wrap').style.height = '500px';
         document.querySelector('#circ-title').innerHTML = inputData[0];//'환경 설정';
@@ -181,9 +185,9 @@
     document.addEventListener("DOMContentLoaded", function(){
         console.log('loaded', navigator.language);
         var lang = navigator.language;
-        (lang === 'ko-KR' || lang === 'ko') ? setData(inputDataKR) : setData(inputDataEn);
+        (lang !== 'ko-KR' || lang === 'ko') ? setData(inputDataKR) : setData(inputDataEn);
 
-        document.querySelector('h6').innerHTML = lang;
+        //document.querySelector('h6').innerHTML = lang;
     });
 </script>
 </html>
