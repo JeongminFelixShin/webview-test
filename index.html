@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
     <title>Contact html</title>
 </head>
 <style>
     body {
         margin: 0;
+        font-weight: 500;
+        font-family: "Spoqa Han Sans Neo",sans-serif;
     }
     .container {
         width: 100%;
@@ -46,6 +49,10 @@
     h2 {
         font-size: 5.555556vw;
         margin: 0;
+    }
+    #circ-desc {
+        font-weight: normal;
+        font-family: "SpoqaHanSansNeo-Regular",sans-serif;
     }
     h3 {
         margin: 6.6666667vw 0 4.444444vw;
@@ -87,12 +94,14 @@
         width: 13.888889vw;
         height: 11.111111vw;
     }
+    a {
+        font-weight: bold;
+    }
 </style>
 <body>
     <div class="container">
         <div class="main-wrap">
-            <img src="img_set_avt_aos_2x.png" alt="" id="main-image">
-            <h6></h6>
+            <img src="..\assets\img\img_set_avt_aos_2x.png" alt="" id="main-image">
             <div class="contents-area">
                 <section>
                     <h2 id="circ-title"></h2>
@@ -139,13 +148,14 @@
                     </div>
                 </section>
             </div>
+            <h6></h6>
         </div>
     </div>
 </body>
 <script>
-    const inputDataKR = ['환경 설정','궁금하신 사항이나 개선 의견을 전달 주시면, <br>\n' + '검토하여 ifland에 반영하도록 하겠습니다.','메일로 문의하기','ifland@sk.com','mailto:ifland@sk.com',
+    const inputDataKR = ['고객센터','궁금하신 사항이나 개선 의견을 전달 주시면, <br>\n' + '검토하여 ifland에 반영하도록 하겠습니다.','메일로 문의하기','ifland@sk.com','mailto:ifland@sk.com',
         '전화로 문의하기','SK 텔레콤 고객님','114','tel:114','다른 통신사 고객님','080-011-6000','tel:080-011-6000'];
-    const inputDataEn = ['Setting','TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTT','TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT','ifland@sk.com','mailto:ifland@sk.com',
+    const inputDataEn = ['Customer Centre','TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTT','TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT','ifland@sk.com','mailto:ifland@sk.com',
         'TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT','TEXTTEXTTEXTTEXTTEXTTEXT\n' +'TEXTTEXTTEXTTEXTTEXTTEXT','1141141141141141141141141141141141141141', 'tel:114','080-011-6000080-011-6000080-011-6000080-01','tel:080-011-6000']
     function setData(inputData) {
         //document.querySelector('.main-wrap').style.height = '500px';
@@ -172,6 +182,7 @@
         console.log('loaded', navigator.language);
         var lang = navigator.language;
         (lang === 'ko-KR' || lang === 'ko') ? setData(inputDataKR) : setData(inputDataEn);
+
         document.querySelector('h6').innerHTML = lang;
     });
 </script>
